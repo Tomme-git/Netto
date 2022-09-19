@@ -1,37 +1,37 @@
-var today = new Date();
+let today = new Date();
 
 //Current hour
-var hourNow = today.getHours();
+let hourNow = today.getHours();
 
 //Current minutes
-var minutesNow = today.getMinutes();
+let minutesNow = today.getMinutes();
 
 //Greeting
-var greeting;
+let greeting;
 
 //Time for today
-var time = hourNow + ":" + minutesNow;
+let time = hourNow + ":" + minutesNow;
 
 //Weekday array
-var weekday = new Array(7);
-weekday[0]="Sunday";
-weekday[1]="Monday";
-weekday[2]="Tuesday";
-weekday[3]="Wednesday";
-weekday[4]="Thursday";
-weekday[5]="Friday";
-weekday[6]="Saturday";
+let weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 
 
 //Use conditions to find out what greeting to use. Morning = 5 to 12, Afternoon = 13 to 17, Evening = 17 to 4. Use else if because of more than 2 conditions.
-if (hourNow >=5 && hourNow <= 12){
-greeting ="Good Morning";
+if (hourNow >= 5 && hourNow <= 12){
+greeting = "Good Morning";
 }
 else if(hourNow >= 13 && hourNow <= 17){
 greeting = "Good Afternoon";
 }
 else if(hourNow >= 17 && hourNow <= 4){
-greeting="Good Evening";
+greeting = "Good Evening";
 }
 
 // Use document.write so you don't have to write the elements in html. This also adds a </br> because it writes as a block element.
